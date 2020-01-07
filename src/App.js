@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import otter from './icons/otter.svg';
+import Weather from './weather.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={otter} className="App-logo" alt="Otter Logo" />
       </header>
+      <section>
+        <h1>Let the Otter tell you the weather.</h1>
+        <Weather></Weather>
+      </section>
     </div>
   );
 }
